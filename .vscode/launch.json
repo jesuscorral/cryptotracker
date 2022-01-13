@@ -18,5 +18,20 @@
               "--no-reload"
             ]
           },
+          {
+            "name": "Docker: Python - Flask",
+            "type": "docker",
+            "request": "launch",
+            "preLaunchTask": "docker-run: debug",
+            "python": {
+              "pathMappings": [
+                {
+                  "localRoot": "${workspaceFolder}",
+                  "remoteRoot": "/src"
+                }
+              ],
+              "projectType": "flask"
+            }
+          }
     ]
 }
